@@ -16,8 +16,7 @@ public class CalculadorTest {
     }
 
     @Before
-    public void setUp() {
-        // Imprimimos el nombre del método antes de ejecutarlo
+    public void before() {
         System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
     }
 
@@ -34,7 +33,7 @@ public class CalculadorTest {
     }
 
     @After
-    public void tearDown() {
+    public void after() {
         System.out.println("Prueba finalizada, campos en 0");
     }
 
